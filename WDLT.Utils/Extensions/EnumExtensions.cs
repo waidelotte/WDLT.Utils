@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.Serialization;
 
 namespace WDLT.Utils.Extensions
 {
@@ -9,9 +10,14 @@ namespace WDLT.Utils.Extensions
     {
         private static readonly Random _random = new Random();
 
-        public static string NameAttribute(this Enum e)
+        public static string DisplayAttribute(this Enum e)
         {
             return e.GetAttributeOfType<DisplayAttribute>()?.Name ?? e.ToString();
+        }
+
+        public static string EnumMemberAttribute(this Enum e)
+        {
+            return e.GetAttributeOfType<EnumMemberAttribute>()?.Value ?? e.ToString();
         }
 
         public static T GetAttributeOfType<T>(this Enum enumVal) where T : Attribute
