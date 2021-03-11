@@ -21,12 +21,7 @@ namespace WDLT.Utils.Extensions
 
         public static IEnumerable<T> Reverse<T>(this IEnumerable<T> collection, int[] sort)
         {
-            if (sort.Length == collection.Count())
-            {
-                return sort.Select(collection.ElementAt);
-            }
-
-            return collection;
+            return sort.Length == collection.Count() ? sort.Select(collection.ElementAt) : collection;
         }
 
         public static IEnumerable<(T item, int index)> WithIndex<T>(this IEnumerable<T> self)
