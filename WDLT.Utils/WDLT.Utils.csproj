@@ -2,6 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Vladyslav Prokhorchuk</Authors>
+    <Copyright>Copyright © Vladyslav Prokhorchuk 2021</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/waidelotte/WDLT.Utils</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/waidelotte/WDLT.Utils</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
