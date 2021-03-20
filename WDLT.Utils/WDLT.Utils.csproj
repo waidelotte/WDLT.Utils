@@ -8,6 +8,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/waidelotte/WDLT.Utils</RepositoryUrl>
     <PackageProjectUrl>https://github.com/waidelotte/WDLT.Utils</PackageProjectUrl>
+    <Description>QOL</Description>
   </PropertyGroup>
 
   <ItemGroup>
